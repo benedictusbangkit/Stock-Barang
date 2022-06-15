@@ -14,10 +14,10 @@ const StockList = () => {
     }
     const deleteStock = async ()=>{
         try {
-            await axios.delte(`http://localhost:21017/stocks/${id}`);
+            await axios.delete(`http://localhost:21017/stocks/${id}`);
             getStock();
         } catch (error) {
-            console.log(error);
+            console.log(error); 
         }
     }
   return (
